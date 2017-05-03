@@ -1,0 +1,40 @@
+/**
+ * Do not change the first two 
+ * lines of this program. They
+ * are used to declare the Main
+ * class and the main method. 
+ */
+
+public class Main {
+
+	public static void main(String[] args) {
+		int goalsHomeBarc = 1;
+		int goalsAwayBarc = 2;
+		int goalsHomeMad = 1;
+		int goalsAwayMad = 3;
+		int totalGoalsMad = goalsHomeMad + goalsAwayMad;
+		int totalGoalsBarc = goalsHomeBarc + goalsAwayBarc;
+		String result = "";
+		
+		if(totalGoalsMad == totalGoalsBarc){
+		  
+		    goalsAwayBarc = goalsAwayBarc *2;
+		    goalsAwayMad *=2;
+		}  
+		    // We calculate again the overall result
+		    totalGoalsMad = goalsHomeMad + goalsAwayMad;
+		    totalGoalsBarc = goalsHomeBarc + goalsAwayBarc;
+		
+		   	System.out.println("Overall Result is ");
+		    System.out.print("F.C. Barcelona "+totalGoalsBarc);
+		    System.out.println(" - Real Madrid "+totalGoalsMad);
+		    
+		    result = (totalGoalsMad > totalGoalsBarc) ? "Madrid passes the round!" : "Barcelona passes the round!";
+		    
+		    if(totalGoalsMad == totalGoalsBarc){
+		    result = "They have to play extra time!";
+		}  
+		   
+	 System.out.println (result);
+	}
+}
